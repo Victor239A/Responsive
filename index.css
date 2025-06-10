@@ -1,0 +1,51 @@
+main {
+    width: 600px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:60px repeat(7, auto);
+    gap:10px;
+
+}
+
+h2, p {
+    grid-column: 1/5;
+}
+
+
+h2 { 
+    height: 60px;
+    font-size: 24px;
+
+}
+
+p {
+    font-size: 18px;
+}
+
+main div {
+    margin: auto;
+  border: 2px solid black;
+  width: 100%;
+  border-radius: 3px;
+  max-width: 125px;
+  height: 100%;
+  min-height: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px black;
+}
+
+main div img {
+    width: 80%;
+    transition: 0.3s ease;
+}
+
+main div:hover img {
+    width: 70%;
+    transition: all 0.3s ease;
+}
